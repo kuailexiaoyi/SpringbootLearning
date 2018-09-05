@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/ssm
+      username: root
+      password: root
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml   #指定mapper的xml文件存放的位置
+  type-aliases-package: com.springboot.translation.domain #指定和数据库映射的实体所在的位置
