@@ -42,8 +42,4 @@ public class AccountServiceImpl implements IAccountService {
         return accountMapper.selectAllAccount();
     }
 
-    @Override
-    public Integer updateAccount(Integer id, String name, Double money) {
-        return accountMapper.updateAccount(id,name,money);
-    }
 }

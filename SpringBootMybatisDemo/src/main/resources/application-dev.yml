@@ -7,3 +7,7 @@ spring:
       url: jdbc:mysql://localhost:3306/ssm
       username: root
       password: root
+
+mybatis:
+  mapper-locations: classpath*:mybatis/*Mapper.xml   #指定mapper的xml文件存放的位置
+  type-aliases-package: com.springboot.mybatis.doamin #指定和数据库映射的实体所在的位置

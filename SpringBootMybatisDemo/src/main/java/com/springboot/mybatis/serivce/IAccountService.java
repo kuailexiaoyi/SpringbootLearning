@@ -22,6 +22,4 @@ public interface IAccountService {
     Account selectAccount(Integer id);
 
     List<Account> selectAllAccount();
-
-    Integer updateAccount(Integer id,String name, Double money);
 }
